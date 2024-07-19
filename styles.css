@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F9F9E0;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+body.editing-background {
+    background-color: #FFE0EB;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: max-width 0.3s ease;
+}
+
+body.editing-background .container {
+    max-width: 1200px;
+}
+
+h2 {
+    text-align: center;
+    color: #FF90BC;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #FF90BC;
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    background-color: #FFC0D9;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #FF90BC;
+    outline: none;
+}
+
+.error-message {
+    color: #FF3B3B; /* Bright red for better visibility */
+    font-size: 1em; /* Slightly larger font size for readability */
+    font-weight: bold; /* Bold text to stand out */
+    margin-top: 5px; /* Adjusted margin for better spacing */
+    margin-bottom: 15px; /* Added space below error message */
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #8ACDD7;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF90BC;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+.otp-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.otp-row input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#recaptcha-container {
+    margin: 10px 0;
+}
+
+/* User Table Styles */
+.user-table-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #FF90BC;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #F9F9E0;
+}
+
+table tr:hover {
+    background-color: #FFC0D9;
+    cursor: pointer;
+}
+
+button.show-table {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #8ACDD7;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.show-table:hover {
+    background-color: #FF90BC;
+}
